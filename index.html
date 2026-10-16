@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0d1117">
+<meta name="description" content="离线四级备考助手：背单词、刷题、阅读、听力、模考、学习统计">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="四级通关">
+<meta name="format-detection" content="telephone=no">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/svg+xml" href="icons/icon.svg">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<title>四级通关 · CET-4 备考助手</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div id="app">
+  <aside class="side">
+    <div class="brand">
+      <div class="brand-logo">四</div>
+      <div class="brand-text">
+        <b>四级通关</b>
+        <span id="brandSub">备考助手</span>
+      </div>
+    </div>
+    <nav id="nav" class="nav"></nav>
+    <div class="side-foot">
+      <div class="mini" id="sideMini"></div>
+      <button class="btn ghost tiny" id="themeBtn" type="button">切换主题</button>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <button class="btn ghost icon only-mobile" id="menuBtn" type="button" aria-label="菜单">☰</button>
+      <div class="tb-left" id="tbLeft"></div>
+      <div class="tb-right" id="tbRight"></div>
+    </header>
+    <section class="view" id="view" tabindex="-1"></section>
+  </main>
+</div>
+
+<div class="scrim" id="scrim"></div>
+<div class="toast-wrap" id="toastWrap"></div>
+<div class="modal-wrap hidden" id="modalWrap"><div class="modal" id="modal"></div></div>
+
+<!-- ============ 数据（纯 JS 变量，file:// 直接双击也能用） ============ -->
+<script src="data/words.js"></script>
+<script src="data/examples.js"></script>
+<script src="data/questions.js"></script>
+<script src="data/passages.js"></script>
+<script src="data/study.js"></script>
+
+<!-- ============ 应用 ============ -->
+<script src="assets/core.js"></script>
+<script src="assets/qr.js"></script>
+<script src="assets/store.js"></script>
+<script src="assets/data.js"></script>
+<script src="assets/srs.js"></script>
+<script src="assets/state.js"></script>
+<script src="assets/view-home.js"></script>
+<script src="assets/view-learn.js"></script>
+<script src="assets/view-quiz.js"></script>
+<script src="assets/view-exam.js"></script>
+<script src="assets/view-material.js"></script>
+<script src="assets/view-stats.js"></script>
+<script src="assets/view-setup.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
